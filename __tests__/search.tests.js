@@ -32,10 +32,10 @@ describe('searchLinks function tests', () => {
 
   // Optional: Demonstrate a failing test to show you can produce a screenshot
   // that shows failure. You might remove or fix this in your final submission.
-  test('intentional fail example', () => {
-    const result = searchLinks(sampleLinks, 'abc');
+ // test('intentional fail example', () => {
+  //  const result = searchLinks(sampleLinks, 'abc');
     // Suppose we incorrectly expect it to return something it shouldn’t
     // This will fail if the array is empty.
-    expect(result).toContain('ftp://myftpserver.com'); // Should fail
-  });
+   // expect(result).toContain('ftp://myftpserver.com'); // Should fail
+ // });
 });
