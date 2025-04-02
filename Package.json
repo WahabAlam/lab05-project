@@ -1,0 +1,11 @@
+{
+    "name": "lab5-project",
+    "version": "1.0.0",
+    "description": "SOFE 2720 - Lab 5 sample project",
+    "scripts": {
+        "test": "jest"
+    },
+    "devDependencies": {
+        "jest": "^29.7.0"
+    }
+}

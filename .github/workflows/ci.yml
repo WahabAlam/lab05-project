@@ -1,0 +1,31 @@
+# .github/workflows/ci.yml
+name: Node CI
+
+on:
+  push:
+    branches: [ "main" ]  # or your primary branch name
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out your code
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      # Step 2: Use Node 16 (or 18) as your environment
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Step 4: Run tests
+      - name: Run tests
+        run: npm test
